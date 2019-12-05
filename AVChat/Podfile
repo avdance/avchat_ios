@@ -1,0 +1,21 @@
+platform :ios, ‘9.0’
+
+use_frameworks!
+
+target ‘AVChat’ do
+
+pod 'Alamofire'
+pod 'SnapKit'
+pod 'SwiftyJSON'
+pod 'Kingfisher'
+pod 'NVActivityIndicatorView' #加载状态
+pod 'DZNEmptyDataSet' #空视图
+pod 'Hero' #专场动画
+pod 'IQKeyboardManagerSwift' #键盘监听
+pod 'Toast-Swift' #提示
+pod 'DynamicColor', '~> 4.2.0'
+pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+pod 'RxSwift', '~> 5'
+pod 'RxCocoa', '~> 5'
+pod 'RealmSwift'
+end
