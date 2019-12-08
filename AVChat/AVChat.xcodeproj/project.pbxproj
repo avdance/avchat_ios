@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1E0CA6EE18543A13FD6AD7DE /* Pods_AVChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CE4AE70DEC82260FE2C381 /* Pods_AVChat.framework */; };
+		BE212879239A07DC00CB8482 /* ACHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE212878239A07DC00CB8482 /* ACHttpManager.swift */; };
+		BE21287B239A089800CB8482 /* ACHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21287A239A089800CB8482 /* ACHttpTool.swift */; };
+		BE21287D239A097B00CB8482 /* ACUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21287C239A097B00CB8482 /* ACUserModel.swift */; };
+		BE21287F239A0CD700CB8482 /* ACRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21287E239A0CD700CB8482 /* ACRegisterViewController.swift */; };
 		BE7AFFA32398E1260014F24B /* ACLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7AFFA22398E1260014F24B /* ACLoginViewController.swift */; };
 		BED2BB5523989CE4001592FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2BB5423989CE4001592FB /* AppDelegate.swift */; };
 		BED2BB5C23989CE4001592FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED2BB5A23989CE4001592FB /* Main.storyboard */; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE212878239A07DC00CB8482 /* ACHttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACHttpManager.swift; sourceTree = "<group>"; };
+		BE21287A239A089800CB8482 /* ACHttpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACHttpTool.swift; sourceTree = "<group>"; };
+		BE21287C239A097B00CB8482 /* ACUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACUserModel.swift; sourceTree = "<group>"; };
+		BE21287E239A0CD700CB8482 /* ACRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACRegisterViewController.swift; sourceTree = "<group>"; };
 		BE7AFFA22398E1260014F24B /* ACLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACLoginViewController.swift; sourceTree = "<group>"; };
 		BED2BB5123989CE4001592FB /* AVChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED2BB5423989CE4001592FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				BE7AFFA22398E1260014F24B /* ACLoginViewController.swift */,
+				BE21287E239A0CD700CB8482 /* ACRegisterViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -247,6 +256,9 @@
 			isa = PBXGroup;
 			children = (
 				BED2BB9E2398B39F001592FB /* ACMacroFile.swift */,
+				BE212878239A07DC00CB8482 /* ACHttpManager.swift */,
+				BE21287A239A089800CB8482 /* ACHttpTool.swift */,
+				BE21287C239A097B00CB8482 /* ACUserModel.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -473,15 +485,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED2BB962398AF6D001592FB /* ACChatViewController.swift in Sources */,
+				BE21287F239A0CD700CB8482 /* ACRegisterViewController.swift in Sources */,
+				BE212879239A07DC00CB8482 /* ACHttpManager.swift in Sources */,
 				BED2BB942398AB75001592FB /* ACViewController.swift in Sources */,
 				BED2BB9C2398B1C0001592FB /* ACOthersViewController.swift in Sources */,
 				BED2BB912398AA6C001592FB /* ACMessageViewController.swift in Sources */,
+				BE21287B239A089800CB8482 /* ACHttpTool.swift in Sources */,
 				BED2BB8F2398A264001592FB /* ACTabbarViewController.swift in Sources */,
 				BED2BB9A2398B194001592FB /* ACMeViewController.swift in Sources */,
 				BE7AFFA32398E1260014F24B /* ACLoginViewController.swift in Sources */,
 				BED2BBA12398B778001592FB /* ACNavController.swift in Sources */,
 				BED2BB982398B155001592FB /* ACContractsViewController.swift in Sources */,
 				BED2BB5523989CE4001592FB /* AppDelegate.swift in Sources */,
+				BE21287D239A097B00CB8482 /* ACUserModel.swift in Sources */,
 				BED2BB5F23989CE4001592FB /* AVChat.xcdatamodeld in Sources */,
 				BED2BB9F2398B39F001592FB /* ACMacroFile.swift in Sources */,
 			);

@@ -12,8 +12,7 @@ import UIKit
 
 //MARK: - 引导页设置
 private func showLeadpage() -> UIViewController{
-    //return ACLoginViewController()
-    return ACTabbarViewController()
+    return ACLoginViewController()
 }
 
 
