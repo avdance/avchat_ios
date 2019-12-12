@@ -40,8 +40,6 @@ class ACOthersViewController: ACViewController {
     }
     override func makeData() -> Void {
         super.makeData()
-        
-//        self.othersDataJson=[{"title":"模块1","title":"功能描述"},{"title":"模块2","title":"功能描述"},{"title":"模块3","title":"功能描述"}]
     }
     
     
@@ -75,8 +73,6 @@ extension ACOthersViewController:UITableViewDelegate,UITableViewDataSource{
             cell = ACOthersCell(style: .default, reuseIdentifier: "cell")
             cell?.selectionStyle = .none
         }
-        
-        //cell?.cellJson = othersDataJson[indexPath.row]
         switch indexPath.row {
         case 0:
             cell?.cellJson=JSON(["title":"连接","detail":"负责人"])
