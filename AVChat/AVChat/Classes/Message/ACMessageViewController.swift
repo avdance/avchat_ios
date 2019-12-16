@@ -40,6 +40,8 @@ class ACMessageViewController: ACViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.rowHeight = kWidth(w: 130)
         tableView.separatorStyle = .none
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.snp.makeConstraints({ (make) in
             make.width.left.bottom.equalTo(view)
             make.top.equalTo(navView.snp.bottom)
@@ -52,3 +54,48 @@ class ACMessageViewController: ACViewController {
     func getData(isHeader:Bool) -> Void {
     }
 }
+
+
+
+extension ACMessageViewController:UITableViewDelegate,UITableViewDataSource{
+    // MARK: 👉 UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return othersDataJson.arrayValue.count
+        return 10
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell  = tableView.dequeueReusableCell(withIdentifier: "cell") as? ACMsgCell
+        if cell == nil {
+            cell = ACMsgCell(style: .default, reuseIdentifier: "cell")
+            cell?.selectionStyle = .none
+        }
+        cell?.cellJson=JSON()
+        return cell!
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        //todo
+    }
+    
+    
+    
+    
+    /*左滑删除*/
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+    }
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteRowAction = UITableViewRowAction.init(style: .destructive, title: "删除会话") { (action, indexPath) in
+        }
+        deleteRowAction.backgroundColor = UIColor.orange
+        
+        return [deleteRowAction]
+    }
+}
+
+
